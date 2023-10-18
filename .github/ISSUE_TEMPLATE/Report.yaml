@@ -1,0 +1,17 @@
+---
+name: "Report"
+description: Suggest an idea for this project
+body:
+- type: input
+  attributes:
+    label: Domain name to be reported
+    placeholder: "request"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: reason
+    placeholder: reason
+  validations:
+    required: true

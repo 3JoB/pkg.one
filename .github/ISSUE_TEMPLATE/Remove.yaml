@@ -1,0 +1,17 @@
+---
+name: "Remove"
+description: Remove your pkg.one subdomain
+body:
+- type: input
+  attributes:
+    label: Domain name that needs to be removed
+    placeholder: "request"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Reason
+    placeholder: reason
+  validations:
+    required: true

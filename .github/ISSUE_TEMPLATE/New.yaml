@@ -1,0 +1,43 @@
+---
+name: "New"
+description: Apply for your pkg.one subdomain
+body:
+- type: markdown
+  attributes:
+    value: |
+      Before applying for a new subdomain name, please search the `list` file to see if the required subdomain name is already occupied.
+
+- type: input
+  attributes:
+    label: Requested subdomain
+    placeholder: "xxx.pkg.one"
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: CNAME target
+    placeholder: "xxx.github.io or xxx.pages.dev"
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Project repo
+    placeholder: "https://github.com/xxx/xxx"
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Documentation repo (if available)
+    placeholder: "https://github.com/xxx/xxx"
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Reason
+    placeholder: reason
+  validations:
+    required: true

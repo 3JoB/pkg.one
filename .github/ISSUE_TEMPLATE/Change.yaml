@@ -1,0 +1,28 @@
+---
+name: "Change"
+description: Change your pkg.one subdomain
+body:
+- type: markdown
+  attributes:
+    value: |
+      Before requesting a change, please search the `list` file to see if the required subdomain is already occupied.
+
+- type: input
+  attributes:
+    label: The original pkg.one subdomain
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: New pkg.one subdomain
+    placeholder: "xxxx.pkg.one"
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Reason
+    placeholder: reason
+  validations:
+    required: true
